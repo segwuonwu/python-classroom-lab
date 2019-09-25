@@ -17,7 +17,7 @@ Let's practice writing classes with useful functionalities
   * Students have a `assign_homework` method
   * Students have a `complete_homework` method 
   * Students have a `print_outstanding_homeworks` method
-  * The `assign_homework` method takes in the name of the assignment as a string and adds a new `Assignment` instance to their `pending_homeworks`
+  * The `assign_homework` method takes in an `Assignment` object, and adds it to its `pending_assignments` list
   * The `complete_homework` method takes in the name of the homework, and the grade as an argument. It finds the specified homework in the `pending_homeworks` list and calls it's `mark_done` method. The method removes the `Assignment` from `pending_homeworks` and adds it to `completed_homeworks` 
     * Returns `True` if assignment was found and modified, `False` if not found
   * `print_outstanding_homeworks` prints out the name of each of the `pending_homeworks`
