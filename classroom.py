@@ -22,8 +22,7 @@ class Student:
         for i in range(len(self.pending_homeworks)):
             homework = self.pending_homeworks[i]
             if homework.name == name:
-                homework.completed = True
-                homework.grade = grade
+                homework.mark_done(grade)
                 self.completed_homeworks.append(self.pending_homeworks.pop(i))
                 break
 
