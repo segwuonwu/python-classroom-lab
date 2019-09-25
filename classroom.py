@@ -6,6 +6,3 @@ class Student:
 
 class SeiClass:
     pass
-
-l = ['a', "b", "c"]
-print(f"{l}")
